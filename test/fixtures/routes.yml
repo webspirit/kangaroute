@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  departure_address: MyString
+  arrival_address: MyString
+  departure_lat: 9.99
+  departure_lng: 9.99
+  arrival_lat: 9.99
+  arrival_lng: 9.99
+  departure_distance_range: 1.5
+  arrival_distance_range: 1.5
+  start_time: 2014-06-22 05:15:37
+  time_range_from: 2014-06-22 05:15:37
+  time_range_to: 2014-06-22 05:15:37
+  active: false
+  user_id: 1
+
+two:
+  departure_address: MyString
+  arrival_address: MyString
+  departure_lat: 9.99
+  departure_lng: 9.99
+  arrival_lat: 9.99
+  arrival_lng: 9.99
+  departure_distance_range: 1.5
+  arrival_distance_range: 1.5
+  start_time: 2014-06-22 05:15:37
+  time_range_from: 2014-06-22 05:15:37
+  time_range_to: 2014-06-22 05:15:37
+  active: false
+  user_id: 1
