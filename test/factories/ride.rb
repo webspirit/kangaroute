@@ -7,7 +7,7 @@ FactoryGirl.define do
     arrival_lat Faker::Address.latitude
     arrival_lng Faker::Address.longitude
     departure_datetime Time.now
-    user_id (1..100).to_a.sample
+    driver_id (1..100).to_a.sample
     available_seats (1..4).to_a.sample
     comments Faker::Lorem.paragraph
   end

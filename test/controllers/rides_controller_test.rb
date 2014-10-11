@@ -28,7 +28,7 @@ class RidesControllerTest < ActionController::TestCase
         departure_datetime: @ride.departure_datetime, 
         available_seats: @ride.available_seats, 
         comments: @ride.comments, 
-        user_id: @ride.user_id 
+        driver_id: @ride.driver_id 
       }
     end
 
@@ -56,7 +56,7 @@ class RidesControllerTest < ActionController::TestCase
         departure_datetime: @ride.departure_datetime, 
         available_seats: @ride.available_seats, 
         comments: @ride.comments, 
-        user_id: @ride.user_id 
+        driver_id: @ride.driver_id 
     }
     assert_redirected_to ride_path(assigns(:ride))
   end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140622021537) do
+ActiveRecord::Schema.define(version: 20141011225422) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,13 +24,35 @@ ActiveRecord::Schema.define(version: 20140622021537) do
     t.decimal  "arrival_lat",        precision: 18, scale: 12
     t.decimal  "arrival_lng",        precision: 18, scale: 12
     t.datetime "departure_datetime"
-    t.integer  "user_id"
+    t.integer  "driver_id"
     t.integer  "available_seats"
     t.text     "comments"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "rides", ["user_id"], name: "index_rides_on_user_id", using: :btree
+  add_index "rides", ["driver_id"], name: "index_rides_on_driver_id", using: :btree
+
+  create_table "users", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet     "current_sign_in_ip"
+    t.inet     "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "mobile"
+    t.string   "name"
+    t.text     "about"
+    t.string   "photo"
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

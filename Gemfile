@@ -11,12 +11,20 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
+gem 'devise'
 
 group :test do 
 
 end
 
+group :development do 
+	gem 'letter_opener'
+	gem 'guard-minitest'
+end
+
 group :test, :development do 
 	gem 'factory_girl_rails'
 	gem 'faker'
+	gem 'pry'
+	gem 'terminal-notifier-guard'
 end

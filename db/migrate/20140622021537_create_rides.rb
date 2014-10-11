@@ -8,12 +8,12 @@ class CreateRides < ActiveRecord::Migration
       t.decimal :arrival_lat, precision: 18, scale: 12
       t.decimal :arrival_lng, precision: 18, scale: 12
       t.datetime :departure_datetime
-      t.integer :user_id
+      t.integer :driver_id
       t.integer :available_seats
       t.text :comments
 
       t.timestamps
     end
-    add_index :rides, :user_id
+    add_index :rides, :driver_id
   end
 end
