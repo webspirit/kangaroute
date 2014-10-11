@@ -2,7 +2,7 @@ require 'test_helper'
 
 class RidesControllerTest < ActionController::TestCase
   setup do
-    @ride = rides(:one)
+    @ride = FactoryGirl.create :ride
   end
 
   test "should get index" do
