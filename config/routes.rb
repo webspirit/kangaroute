@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :routes
+  resources :rides
 
 end
