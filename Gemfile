@@ -14,7 +14,7 @@ gem 'spring', group: :development
 gem 'devise'
 
 group :test do 
-
+	gem 'shoulda'
 end
 
 group :development do 
