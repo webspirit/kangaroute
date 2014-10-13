@@ -1,0 +1,39 @@
+<div class="row">
+  <p id="intro" class='text-center'>
+    Share a ride as a Passenger or a Driver.
+  </p>
+</div>
+
+<div class="row homepage_sign_up">
+  <%= form_for(User.new, :as => :user, :url => registration_path(:user)) do |f| %>
+    <%#= devise_error_messages! %>
+
+    <div class="form-group col-sm-9 col-sm-offset-3 col-xs-12 col-xs-offset-2">
+      <%= f.email_field :email, placeholder: 'Enter your email', class: 'form-control col-sm-3', autofocus: true %>
+      <%= f.password_field :password, placeholder: 'Enter your password', class: 'form-control col-sm-3' %>
+      <%= f.submit "Sign up", placeholder: 'lala', class: 'form-control btn-success col-sm-3' %>
+    </div>
+  <% end %>
+</div>
+
+<div class="row features col-sm-10 col-sm-offset-1">
+  <section class="col-sm-6 col-md-3">
+    <i class="fa fa-pencil-square-o animated zoomInDown"></i>
+    <p>Step 1: Add a route</p>
+  </section>
+
+  <section class="col-sm-6 col-md-3">
+    <i class="fa fa-search animated zoomInDown"></i>
+    <p>Step 2: Search for matching routes</p>
+  </section>
+
+  <section class="col-sm-6 col-md-3">
+    <i class="fa fa-check animated zoomInDown"></i>
+    <p>Step 3: Claim preferable route among available</p>
+  </section>
+
+  <section class="col-sm-6 col-md-3">
+    <i class="fa fa-car animated zoomInDown"></i>
+    <p>Step 4: Travel to your destination!</p>
+  </section>
+</div>
