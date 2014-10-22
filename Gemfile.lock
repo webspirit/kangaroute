@@ -1,3 +1,21 @@
+GIT
+  remote: git://github.com/jkrmr/jazz_hands.git
+  revision: dbb97a2f5782db30c74819fc9699fad84ab8078f
+  branch: byebug_and_updated_pry
+  specs:
+    jazz_hands (0.5.2)
+      awesome_print (~> 1.2)
+      hirb (~> 0.7.1)
+      pry (~> 0.10.1)
+      pry-byebug (>= 2.0.0)
+      pry-coolline (>= 0.2.4)
+      pry-doc (~> 0.4.6)
+      pry-git (~> 0.2.3)
+      pry-rails (~> 0.3.2)
+      pry-remote (>= 0.1.7)
+      pry-stack_explorer (~> 0.4.9)
+      railties (>= 3.0, < 5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,9 +46,23 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.6)
+    annotate (2.6.5)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arel (5.0.1.20140414130214)
+    awesome_print (1.2.0)
     bcrypt (3.1.7)
+    better_errors (2.0.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.2)
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     coderay (1.1.0)
@@ -41,6 +73,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    columnize (0.8.9)
+    coolline (0.5.0)
+      unicode_utils (~> 1.4)
+    debug_inspector (0.0.2)
+    debugger-linecache (1.2.0)
     devise (3.4.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -48,6 +85,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    diff-lcs (1.2.5)
+    diffy (3.0.7)
     erubis (2.7.0)
     execjs (2.2.0)
     factory_girl (4.4.0)
@@ -59,6 +98,10 @@ GEM
       i18n (~> 0.5)
     ffi (1.9.6)
     formatador (0.2.5)
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
     guard (2.6.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -69,6 +112,7 @@ GEM
       guard (~> 2.0)
       minitest (>= 3.0)
     hike (1.2.3)
+    hirb (0.7.2)
     hitimes (1.2.2)
     i18n (0.6.9)
     jbuilder (2.1.1)
@@ -97,10 +141,31 @@ GEM
     orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.5)
+    posix-spawn (0.3.9)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (2.0.0)
+      byebug (~> 3.4)
+      pry (~> 0.10)
+    pry-coolline (0.2.5)
+      coolline (~> 0.5)
+    pry-doc (0.4.6)
+      pry (>= 0.9)
+      yard (>= 0.8)
+    pry-git (0.2.3)
+      diffy
+      grit
+      pry (>= 0.9.8)
+    pry-rails (0.3.2)
+      pry (>= 0.9.10)
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
+    pry-stack_explorer (0.4.9.1)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     puma (2.9.1)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -171,23 +236,30 @@ GEM
     uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unicode_utils (1.4.0)
     warden (1.2.3)
       rack (>= 1.0)
+    yard (0.8.7.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate
+  better_errors
+  binding_of_caller
   coffee-rails (~> 4.0.0)
   devise
   factory_girl_rails
   faker
   guard-minitest
+  jazz_hands!
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
   pg
   pry
+  pry-byebug
   puma
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)

@@ -20,11 +20,16 @@ end
 group :development do 
 	gem 'letter_opener'
 	gem 'guard-minitest'
+	gem 'better_errors'
+	gem 'binding_of_caller'
+	gem 'annotate'
 end
 
 group :test, :development do 
 	gem 'factory_girl_rails'
 	gem 'faker'
 	gem 'pry'
+	gem 'pry-byebug'
+	gem 'jazz_hands', github: 'jkrmr/jazz_hands', branch: 'byebug_and_updated_pry'
 	gem 'terminal-notifier-guard'
 end
