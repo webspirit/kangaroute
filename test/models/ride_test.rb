@@ -16,6 +16,10 @@
 #  created_at         :datetime
 #  updated_at         :datetime
 #
+# Indexes
+#
+#  index_rides_on_driver_id  (driver_id)
+#
 
 require 'test_helper'
 

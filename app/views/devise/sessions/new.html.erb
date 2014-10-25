@@ -1,0 +1,23 @@
+<div class='container'>
+  <div class='row title'>
+    <h2>Welcome back</h2>
+  </div>
+  <div class='col-md-4 col-md-offset-4 devise_form'>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <% resource.errors.full_messages.each do |msg| %>
+        <p class='pale-red'><%= msg %></p>
+      <% end %>
+
+      <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Email Address' %><br/>
+      <%= f.password_field :password, autocomplete: 'off', class: 'form-control', placeholder: 'Password' %><br/>
+
+      <% if devise_mapping.rememberable? -%>
+		    <div class='left'><%= f.check_box :remember_me %> <%= f.label :remember_me %></div><br/><br/>
+		  <% end -%>
+      
+      <%= f.submit 'LOG IN', class: 'form-control btn-primary' %><br/>
+      <p class='light-grey info'><%= link_to 'Forgot password?', new_password_path(resource_name) %> | <%= link_to 'Resend confirmation email?', new_confirmation_path(resource_name) %></p>
+      <p class='info'>Don't have an account? <%= link_to 'Sign up', new_user_registration_path %></p>
+    <% end %>
+  </div>
+</div>

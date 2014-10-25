@@ -13,7 +13,18 @@
  *= require_self
  *= require base
  *= require color
- *= require pages
- *= require animate
- *= require rides
  */
+
+.car {
+	margin-top: 50px;
+}
+
+.info {
+	font-size: 12px;
+}
+
+.devise_form {
+	.form-control {
+		height: 50px;
+	} 
+}

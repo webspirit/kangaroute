@@ -30,6 +30,5 @@ group :test, :development do
 	gem 'faker'
 	gem 'pry'
 	gem 'pry-byebug'
-	gem 'jazz_hands', github: 'jkrmr/jazz_hands', branch: 'byebug_and_updated_pry'
 	gem 'terminal-notifier-guard'
 end
