@@ -11,3 +11,5 @@
 /tmp
 /config/database.yml
 .DS_Store
+.ruby-version
+.ruby-gemset
