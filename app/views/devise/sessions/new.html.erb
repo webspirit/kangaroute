@@ -15,7 +15,7 @@
 		    <div class='left'><%= f.check_box :remember_me %> <%= f.label :remember_me %></div><br/><br/>
 		  <% end -%>
       
-      <%= f.submit 'LOG IN', class: 'form-control btn-primary' %><br/>
+      <%= f.submit 'Log in', class: 'form-control btn-primary' %><br/>
       <p class='light-grey info'><%= link_to 'Forgot password?', new_password_path(resource_name) %> | <%= link_to 'Resend confirmation email?', new_confirmation_path(resource_name) %></p>
       <p class='info'>Don't have an account? <%= link_to 'Sign up', new_user_registration_path %></p>
     <% end %>
