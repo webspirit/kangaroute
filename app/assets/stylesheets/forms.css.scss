@@ -1,0 +1,38 @@
+.form { 
+  margin-top: 20px;
+
+  .form-control {
+    color: #373737;
+    border: 1px solid #dcdcdc;
+    box-shadow: none;
+    height: 44px;
+    &:hover { border-color: #8a898a; }
+    &:focus { border-color: #373737; }
+  }
+  textarea { min-height: 120px; }
+
+  .btn-grey {
+    background-color: #5d5c5d;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.004em;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+
+    &:hover {
+      background-color: #373737;
+      text-decoration: none !important;
+      cursor: pointer;
+      box-shadow: 0;
+    }
+  }
+
+  // input placeholder color
+  ::-webkit-input-placeholder { color: #8a898a;}
+  :-moz-placeholder { color: #8a898a; opacity:  1; }
+  ::-moz-placeholder { color: #8a898a; opacity:  1; }
+  :-ms-input-placeholder { color: #8a898a; }
+}
