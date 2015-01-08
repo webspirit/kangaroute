@@ -13,7 +13,8 @@
  *= require_self
  *= require base
  *= require color
- *= require pages
- *= require animate
- *= require rides
+ *= require pages/pages
+  *= require pages/home
+  *= require pages/animate
+ *= require rides/rides
  */

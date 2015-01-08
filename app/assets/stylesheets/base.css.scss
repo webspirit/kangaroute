@@ -3,7 +3,9 @@
  	font-family: 'Verdana';
  }
 
-
+html, body, .content, .homepage {
+  height: 100%;
+}
 
 /* 'Universal' classes */
  .centered {
@@ -13,6 +15,4 @@
   text-align: center;
 }
 
-.left {
-	float: left;
-}
+.left { float: left; }

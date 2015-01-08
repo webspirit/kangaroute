@@ -1,0 +1,40 @@
+.homepage {
+  background: #2A81CC image-url("home_bg.png") no-repeat;
+
+  #intro {
+    display: block;
+    color: white;
+    font-size: 40px;
+    margin-top: 80px;
+  }
+
+  .sign_up .form-control {
+    float: left;
+    width: 20%;
+    margin-right: 2%;
+  }
+
+  .features {
+    section {
+      background-color: #F8F8F8;
+      margin-top: 80px;
+      height: 200px;
+      text-align: center;
+      color: white;
+      p { color: #2A81CC; }
+    }
+
+    i {
+      border-radius: 50%;
+      background-color: #2A81CC;
+      margin-top: 40px;
+      padding: 20px;
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+    section:hover {
+      p { color: #2372b2; }
+      i { background-color: #2372b2; }
+    }
+  }
+}
